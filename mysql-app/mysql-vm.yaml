@@ -10,7 +10,7 @@ spec:
   # Friendly image name: Ubuntu-18.04-bionic-server-cloudimg-amd64
   imageName: vmi-4790c91e8a8aff61a
   storageClass: tmm-kubernetes-storage-policy
-  powerState: poweredOff
+  powerState: poweredOn
   vmMetadata:
     secretName: mysql-vm-bootstrap-secret
     transport: CloudInit
