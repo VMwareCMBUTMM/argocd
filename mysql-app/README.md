@@ -1,1 +1,1 @@
-# MySQL Application K8s Manifests
+# Argocd MySQL Application K8s Manifests
