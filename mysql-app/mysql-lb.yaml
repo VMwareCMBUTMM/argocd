@@ -1,10 +1,10 @@
-apiVersion: vmoperator.vmware.com/v1alpha1
+apiVersion: vmoperator.vmware.com/v1alpha3
 kind: VirtualMachineService
 metadata:
-  name: mysql-vm-lb
+  name: argocd-mysql-lb
 spec:
   selector:
-    mysql-vm-lb: vm-lb-selector
+    vm-lb-selector: argocd-mysql-lb
   type: LoadBalancer
   ports:
     - name: ssh
