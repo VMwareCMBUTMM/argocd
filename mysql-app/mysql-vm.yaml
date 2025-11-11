@@ -5,7 +5,7 @@ metadata:
   namespace: acme-prod-dc6lx
   labels:
     vm-selector: argocd-mysql-vm
-    argocd-mysql-lb: vm-lb-selector
+    vm-lb-selector: argocd-mysql-lb
 spec:
   className: best-effort-medium
   # Friendly image name: ubuntu-18.04-lts-bionic-server-cloudimg-amd64
