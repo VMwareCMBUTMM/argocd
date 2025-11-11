@@ -2,23 +2,26 @@ apiVersion: vmoperator.vmware.com/v1alpha3
 kind: VirtualMachine
 metadata:
   name: argocd-mysql-vm
+  namespace: acme-prod-dc6lx
   labels:
     vm-selector: argocd-mysql-vm
-    vm-lb-selector: argocd-mysql-lb
+    argocd-mysql-lb: vm-lb-selector
 spec:
-  className: best-effort-small
-  # Friendly image name: ubuntu-server-18.04-lts-bionic-beaver
+  className: best-effort-medium
+  # Friendly image name: ubuntu-18.04-lts-bionic-server-cloudimg-amd64
   imageName: vmi-b3ac79d42e0c92b81
   storageClass: site-a-vsan-supervisor-default-storage-policy
   powerState: PoweredOn
   network:
-    domainName: vcf-content-lab.local
+    domainName: vcf-tmm-lab.local
     nameservers:
       - 192.19.189.10
       - 192.19.189.20
     searchDomains:
-      - vcf-content-lab.local
+      - vcf-tmm-lab.local
   bootstrap:
     cloudInit:
       rawCloudConfig:
         name: argocd-mysql-vm-bootstrap-secret
+        key: user-data
+
