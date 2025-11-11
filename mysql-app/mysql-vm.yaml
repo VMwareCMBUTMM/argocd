@@ -12,12 +12,12 @@ spec:
   storageClass: site-a-vsan-supervisor-default-storage-policy
   powerState: PoweredOn
   network:
-    domainName: vcf-content-lab.local
+    domainName: vcf-tmm-lab.local
     nameservers:
       - 192.19.189.10
       - 192.19.189.20
     searchDomains:
-      - vcf-content-lab.local
+      - vcf-tmm-lab.local
   bootstrap:
     cloudInit:
       rawCloudConfig:
