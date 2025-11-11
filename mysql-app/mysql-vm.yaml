@@ -7,7 +7,7 @@ metadata:
     vm-selector: argocd-mysql-vm
     vm-lb-selector: argocd-mysql-lb
 spec:
-  className: best-effort-medium
+  className: best-effort-small
   # Friendly image name: ubuntu-18.04-lts-bionic-server-cloudimg-amd64
   imageName: vmi-b3ac79d42e0c92b81
   storageClass: site-a-vsan-supervisor-default-storage-policy
