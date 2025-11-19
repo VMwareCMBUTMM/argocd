@@ -11,7 +11,7 @@ spec:
   # Friendly image name: ubuntu-18.04-lts-bionic-server-cloudimg-amd64
   imageName: vmi-b3ac79d42e0c92b81
   storageClass: site-a-vsan-supervisor-default-storage-policy
-  powerState: PoweredOff
+  powerState: PoweredOn
   network:
     domainName: vcf-tmm-lab.local
     nameservers:
